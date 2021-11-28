@@ -1,3 +1,8 @@
+/* Style */
+
+/*-------------------------------
+** Default Style 
+*/
 body, ul, li, p {
     margin: 0px;
     padding: 0px;
@@ -42,8 +47,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px 20px 15px 20px;
 }
 
 /*-------------------------------
@@ -54,21 +58,37 @@ a {
     grid-area: header;
     display: flex;
     justify-content: center;
+
+    background-image: url("../img/header-background.png") ;
+    background-repeat: no-repeat;
+    background-position: -95px 130px;
+    background-size: cover;
+
+    /* Shadow box */
+    -webkit-box-shadow: 5px -3px 2px -3px rgba(0,0,0,0.1); 
+    box-shadow: 5px -3px 2px -3px rgba(0,0,0,0.1);
+    z-index: 10;
 }
 
 .header .photo {
     text-align: center;
+    max-width: 100%;
 }
 
 .header .photo img {
     /* image border */
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    background-color: #fff;
+    height: 170px;
+    width: 170px;
+    border: 5px solid white;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 
+
 .line {
-    border: 1px solid gainsboro;
+    border: 1px solid white;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -94,6 +114,7 @@ a {
     display: block;
     padding:1rem .7em;
     color: black;
+    background-color: white;
     cursor: pointer;
 }
 
@@ -107,18 +128,29 @@ a {
     color: white;
 }
 
+
 /*-------------------------------
 ** Main 
 */
 
 main {
     grid-area: main;
-    background-color: whitesmoke;
+    background-color: white;
+    
 }
 
-.main-title {
-
+.content {
+    margin: 30px 20px 20px 20px;
 }
+
+.content-title h2{
+    margin-bottom: 10px;
+}
+
+.content-text {
+    color: darkgrey;
+}
+
 
 /*-------------------------------
 ** Footer 
