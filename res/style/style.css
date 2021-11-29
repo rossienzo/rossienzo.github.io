@@ -24,7 +24,7 @@ a {
 }
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 60px;
     background-color: white;
@@ -77,9 +77,9 @@ a {
 .header .photo img {
     /* image border */
     background-color: #fff;
-    height: 170px;
-    width: 170px;
-    border: 5px solid white;
+    height: 160px;
+    width: 155px;
+    border: 8px solid white;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -126,6 +126,11 @@ a {
     color: white;
 }
 
+#navigation li a:active {
+    background-color: #2ca7cf;
+    color: white;
+}
+
 #navigation .selected {
     background-color: deepskyblue;
     color: white;
@@ -146,6 +151,10 @@ main {
     margin: 30px 20px 10px 20px;
 }
 
+.contrast {
+    background-color: whitesmoke;
+}
+
 .content-title h2{
     margin-bottom: 10px;
 }
@@ -155,6 +164,37 @@ main {
     text-align: justify;
 }
 
+.content-link {
+    display: flex;
+    margin-top: 15px;
+}
+
+.content-link a{
+    width: 130px;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    font-size: .9em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #00c6ff;
+}
+
+.content-link a:hover {
+    color: white;
+    background-color: #3681dd;
+}
+
+.content-link a:active {
+    background-color: #2f6ab3;
+}
+
+
+/* Cotent - About */
+
+.content address {
+    margin-top: 20px;
+}
 
 /*-------------------------------
 ** Footer 
@@ -175,14 +215,23 @@ footer {
 ********************************/
 
 @media only screen and (max-width: 750px) {
+    
+    /*-------------------------------
+    ** Default Style 
+    */
+
     .wrapper {
         margin-top: 0px;
         text-align: center;
-
+        max-width: 600px;
         /* Flexbox */
         display: flex;
         flex-direction: column;
     }
+
+    /*-------------------------------
+    ** Header 
+    */
 
     .header {
         background-image: url("../img/header-background.png") ;
@@ -196,10 +245,36 @@ footer {
         width: 100%;
     }
 
+    #navigation {
+        justify-content: center;
+        display: flex;
+    }
+
+    #navigation ul {
+        max-width: 400px;
+        flex-grow: 1;
+    }
+
+    /*-------------------------------
+    ** Main 
+    */
+
+    main {
+        margin-bottom: 20px;
+    }
+
+    .content .content-link {
+        flex-direction: row-reverse;
+    }
+
+    /*-------------------------------
+    ** Footer 
+    */
+
     footer {
         display: block;
         text-align: center;
-        background-color: whitesmoke;
+        background-color: gainsboro;
     }
   
 }
