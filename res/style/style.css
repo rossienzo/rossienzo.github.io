@@ -16,7 +16,6 @@ body {
     background: #00c6ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 a {
@@ -103,6 +102,10 @@ a {
     padding: 30px 30px
 }
 
+.sidebar .info-name {
+    color: white;
+}
+
 /* Header - Navigation */
 
 #navigation li {
@@ -140,7 +143,7 @@ main {
 }
 
 .content {
-    margin: 30px 20px 20px 20px;
+    margin: 30px 20px 10px 20px;
 }
 
 .content-title h2{
@@ -149,6 +152,7 @@ main {
 
 .content-text {
     color: darkgrey;
+    text-align: justify;
 }
 
 
@@ -161,4 +165,41 @@ footer {
     padding: 8px;
     display: flex;
     justify-content: end;
+}
+
+
+
+
+/********************************
+******* Media Style *************
+********************************/
+
+@media only screen and (max-width: 750px) {
+    .wrapper {
+        margin-top: 0px;
+        text-align: center;
+
+        /* Flexbox */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        background-image: url("../img/header-background.png") ;
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+  
 }
