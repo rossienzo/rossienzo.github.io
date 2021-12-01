@@ -32,7 +32,7 @@ a {
     /* Grid */
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 100px 750px;
+    grid-template-rows: 100px 650px;
     grid-template-areas: "header main"
                          "header main"
                          "header footer";
@@ -77,8 +77,8 @@ a {
 .header .photo img {
     /* image border */
     background-color: #fff;
-    height: 160px;
-    width: 155px;
+    height: 145px;
+    width: 140px;
     border: 8px solid white;
     border-radius: 50%;
     -moz-border-radius: 50%;
