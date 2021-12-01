@@ -24,7 +24,7 @@ a {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1160px;
     margin: 0 auto;
     margin-top: 60px;
     background-color: white;
@@ -32,7 +32,7 @@ a {
     /* Grid */
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 100px 650px;
+    grid-template-rows: 100px 750px;
     grid-template-areas: "header main"
                          "header main"
                          "header footer";
