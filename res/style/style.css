@@ -32,7 +32,7 @@ a {
     /* Grid */
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 100px 650px;
+    grid-template-rows: 100px minmax(650px, max-content);
     grid-template-areas: "header main"
                          "header main"
                          "header footer";
@@ -189,9 +189,41 @@ main {
     background-color: #2f6ab3;
 }
 
+/*
+ * LINK - /web-fundamentals
+ */
 
-/* Cotent - About */
+ /* web-fundamentals - activities */
 
+.content .lab-activities h3 {
+    display: inline-block;
+    margin: 0px;
+    padding: 5px;
+    background: #262626;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.1em;
+}
+.content .lab-activities {
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
+}
+
+.lab-activities ol li{
+    list-style-type: decimal;
+    color: black;
+}
+
+.lab-activities li a:hover {
+    color: #00c6ff;
+}
+
+/* 
+ * LINK - /contact
+ */
+
+ /* contact - address */
 .content address {
     margin-top: 20px;
     padding: 20px;
