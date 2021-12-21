@@ -1,0 +1,111 @@
+
+:root {
+    --main-background: #F4F4F4;
+    --text-color: #9c9c9c;
+    --border-color: #E2E2E2;
+}
+
+* {
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*********************
+** header 
+*/
+
+#navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3.4em;
+    border-bottom: 1px solid var(--border-color);
+    background-color: #FFFFFF;
+}
+
+#branding {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+    padding: 1em 1.8em;
+    font-family: 'Roboto-Bold';
+    font-weight: 800;
+}
+
+#navigation h1{
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+#navigation a {
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: black;
+}
+
+#navigation a:hover {
+    color: black;
+    font-weight: 600;
+}
+
+#navigation nav li a {
+    color: var(--text-color);
+    font-family: 'Roboto-Thin';
+    
+}
+
+#navigation nav ul {
+    display: flex;
+
+}
+
+#navigation nav li {
+    padding: 0 10px;
+}
+
+#navigation nav li {
+    padding: 0 10px;
+    border-left: 1px solid var(--border-color);
+}
+
+#navigation nav li:first-child {
+    border-left: none;
+    margin-left: 0.4em;
+}
+
+#navigation .buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+#navigation .buttons button {
+    width: 4.8em;
+    height: 100%;
+    border: none;
+    border-left: 1px solid var(--border-color);
+    background-color: #FFFFFF;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/*********************
+** main
+*/
+
+main {
+    background-color: var(--main-background);
+}
