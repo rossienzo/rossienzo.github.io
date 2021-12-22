@@ -1,7 +1,7 @@
 
 :root {
     --main-background: #F4F4F4;
-    --text-color: #9c9c9c;
+    --text-color: #3C3B3B;
     --border-color: #E2E2E2;
 }
 
@@ -9,14 +9,34 @@
     font-family: 'Roboto', Verdana, Tahoma, sans-serif;
 }
 
+body {
+    background-color: var(--main-background);
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto-Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+p {
+    font-family: 'Roboto-Thin';
+    font-weight: 600;
+
+}
+
 a {
     text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
 }
 
 .wrapper {
-    display: block;
-    max-width: 100%;
+    /* display: block; */
+    display: flex;
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 110px 20px 100px 20px;
 }
 
 /*********************
@@ -27,7 +47,10 @@ a {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 3.4em;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
     border-bottom: 1px solid var(--border-color);
     background-color: #FFFFFF;
 }
@@ -38,7 +61,7 @@ a {
     align-content: center;
     height: 100%;
     border-right: 1px solid var(--border-color);
-    padding: 1em 1.8em;
+    padding: 10px 20px;
     font-family: 'Roboto-Bold';
     font-weight: 800;
 }
@@ -51,8 +74,6 @@ a {
 #navigation a {
     font-size: 0.8em;
     letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: black;
 }
 
 #navigation a:hover {
@@ -73,16 +94,12 @@ a {
 
 #navigation nav li {
     padding: 0 10px;
-}
-
-#navigation nav li {
-    padding: 0 10px;
     border-left: 1px solid var(--border-color);
 }
 
 #navigation nav li:first-child {
     border-left: none;
-    margin-left: 0.4em;
+    margin-left: 7px;
 }
 
 #navigation .buttons {
@@ -93,7 +110,7 @@ a {
 }
 
 #navigation .buttons button {
-    width: 4.8em;
+    width: 60px;
     height: 100%;
     border: none;
     border-left: 1px solid var(--border-color);
@@ -103,9 +120,191 @@ a {
 }
 
 /*********************
+** sidebar
+*/
+
+#sidebar {
+    width: 550px;
+    margin-right: 40px;
+}
+
+#sidebar .preface{
+    border-bottom: 1px solid var(--border-color);
+}
+
+#sidebar .preface .description{
+    margin-bottom: 40px;
+}
+
+#sidebar .preface h1 {
+    font-family: 'Roboto-Bold';
+    font-size: 3em;
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+
+#sidebar .preface p {
+    color: var(--text-color);
+
+}
+
+
+#logo img {
+
+}
+
+
+/*********************
 ** main
 */
 
 main {
-    background-color: var(--main-background);
+    width: 100%;
+}
+
+main article {
+    margin-bottom: 50px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+}
+
+/* header of the post */
+main article header {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+main .post header > div {
+    padding: 50px 40px 50px 40px;
+}
+
+/* title of post */
+main article header .title {
+    flex-grow: 1;
+    border-right: 1px solid var(--border-color);
+}
+
+main article header .title h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* author of post */
+main artitle header .details {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main .details .date-post {
+    font-family: 'Roboto-Bold';
+    font-size: .9em;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+main .details .author .name {
+    margin-right: 10px;
+    font-size: 0.8em;
+    color: var(--text-color);
+}
+
+/* avatar image of autor */
+main .details .author .avatar {
+    border-radius: 100%;
+}
+
+
+main article header .author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Spacing of section and footer */
+main article section, main article footer {
+    padding: 0px 40px 30px 40px;
+}
+
+
+/* Section heart of post */
+main article section .picture {
+    margin-bottom: 40px;
+}
+
+main article section .text-post {
+    line-height: 1.8em;
+}
+
+/* footer of section */
+main article footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+main article footer .link-reading {
+    color: var(--text-color);
+    font-family: 'Roboto-Bold';
+}
+
+main article footer .status {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+main article footer .status li {
+    padding: 0 10px;
+    border-left: 1px solid var(--border-color);
+}
+
+main article footer .status li:first-child {
+    border-left: none;
+    margin-left: 7px;
+}
+main article footer .status a {
+    font-size: 0.8em;
+    color: var(--text-color);
+}
+
+
+/* main pagination */
+#pagination {
+    width: 100%;
+}
+
+#pagination ul {
+    display: flex;
+}
+
+#pagination ul li:first-child {
+    margin-right: 100px;
+}
+
+#pagination li a {
+    font-family: 'Roboto-Bold';
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+#pagination li i{
+    color: var(--text-color);
+    font-size: 0.8em;
+}
+
+/* name and general */
+.border-bottom {
+    padding: 0px 2px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.disabled {
+    color: var(--border-color);
 }
