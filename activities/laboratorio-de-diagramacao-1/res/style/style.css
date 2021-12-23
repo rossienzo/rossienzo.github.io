@@ -53,6 +53,7 @@ a {
     left: 0;
     border-bottom: 1px solid var(--border-color);
     background-color: #FFFFFF;
+    z-index: 10000;
 }
 
 #branding {
@@ -78,13 +79,12 @@ a {
 
 #navigation a:hover {
     color: black;
-    font-weight: 600;
 }
 
 #navigation nav li a {
     color: var(--text-color);
     font-family: 'Roboto-Thin';
-    
+    font-weight: 600;
 }
 
 #navigation nav ul {
@@ -148,11 +148,44 @@ a {
 
 }
 
-
-#logo img {
-
+#sidebar .cards {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
+#sidebar .cards header {
+    position:absolute;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    bottom: 0px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+}
+
+#sidebar .cards header h3 {
+    margin-bottom: 10px;
+}
+
+#sidebar .cards header h3, #sidebar .cards header p{
+    font-size: 0.65em;
+    text-transform: uppercase;
+}
+
+#sidebar .cards {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sidebar .cards .data-card {
+    width: 100%;
+} 
+
+#sidebar .cards .avatar {
+    height: 100%;
+}
 
 /*********************
 ** main
@@ -214,7 +247,7 @@ main .details .author .name {
 }
 
 /* avatar image of autor */
-main .details .author .avatar {
+.avatar {
     border-radius: 100%;
 }
 
@@ -274,6 +307,13 @@ main article footer .status a {
     color: var(--text-color);
 }
 
+main article footer ul li > :hover {
+    font-weight: 600;
+}
+
+.status i {
+    color: #E3E3E3;
+}
 
 /* main pagination */
 #pagination {
@@ -305,6 +345,7 @@ main article footer .status a {
     border-bottom: 1px solid var(--border-color);
 }
 
-.disabled {
-    color: var(--border-color);
+.disabled, .disabled i {
+    color: var(--border-color) !important;
+    cursor: none;
 }
