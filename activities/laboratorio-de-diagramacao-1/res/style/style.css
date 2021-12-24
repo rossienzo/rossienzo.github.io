@@ -20,7 +20,7 @@ h1, h2, h3 {
     letter-spacing: 0.1em;
 }
 
-p {
+p, h4 {
     font-family: 'Roboto-Thin';
     font-weight: 600;
 }
