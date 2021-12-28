@@ -1,17 +1,18 @@
 @font-face {
     font-family: "Roboto";
     src: url('roboto/Roboto-Regular.ttf'),
-         url('https://fonts.googleapis.com/css2?family=Roboto&display=swap') format('ttf');
+         url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 
 @font-face {
   font-family: "Roboto-Thin";
   src: url('roboto/Roboto-Thin.ttf'),
-       url('https://fonts.googleapis.com/css2?family=Roboto&display=swap') format('ttf');
+       url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 
 @font-face {
   font-family: "Roboto-Bold";
   src: url('roboto/Roboto-Bold.ttf'),
-       url('https://fonts.googleapis.com/css2?family=Roboto&display=swap') format('ttf');
+       url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
+
