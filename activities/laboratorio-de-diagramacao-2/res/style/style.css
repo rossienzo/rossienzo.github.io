@@ -4,7 +4,10 @@
 :root {
     --color-black: #3a3a3a;
     --title-aside: #a8a7a7;
-    --background-grey: #F3F3F2;
+    --background-gray: #F3F3F2;
+    --background-button: #E95C3C;
+    --background-button-hover: #d4563a;
+    --background-footer: #1C1C1C;
 }
 
 
@@ -33,6 +36,17 @@ p {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 30px;
+}
+
+/* rounded button */
+.rounded-button {
+    border-radius: 80px 80px 80px 80px;
+}
+
+/* rows of cards (section gray, footer) */
+.rows > * {
+    max-width: 33.333333%;
+    padding: 0px 25px;
 }
 
 /**********************
@@ -79,7 +93,6 @@ p {
 
 #banner .actived{
     border: 2px solid #FFFFFF;
-    border-radius: 80px 80px 80px 80px;
 }
 
 
@@ -144,7 +157,7 @@ main aside .posts {
 main aside .posts .post {
     margin-top: 20px;
     padding-bottom: 40px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--background-gray);
 }
 
 main aside .posts .post:last-child {
@@ -176,26 +189,54 @@ main aside .post .post-content p {
     margin-left: 20px;
 }
 
+/**********************
+**** main section gray
+***********************/
 
-
-
-/* main section grey */
 #section-gray {
-    background-color: var(--background-grey);
+    background-color: var(--background-gray);
     padding: 60px 0px;
 }
 
 #section-gray .cards {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-#section-gray .card {
-    padding: 0px 25px;
+    flex-wrap: wrap;
 }
 
 #section-gray .card h3{
     white-space: nowrap;
+    color: var(--color-black);
+    font-weight: bold;
 }
 
+#section-gray .card img{
+    margin: 30px 0 20px 0;
+}
+
+#section-gray .card .rounded-button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: var(--background-button);
+    color: #FFFFFF;
+}
+
+#section-gray .card .rounded-button:hover {
+    background-color: var(--background-button-hover);
+}
+
+/**********************
+**** footer
+***********************/
+
+footer {
+    background-color: var(--background-footer);
+    padding: 50px 0 30px 0;
+}
+
+footer .rows {
+    display: flex;
+    flex-direction: row;
+}
