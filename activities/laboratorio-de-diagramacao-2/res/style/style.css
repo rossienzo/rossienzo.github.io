@@ -3,6 +3,8 @@
 
 :root {
     --color-black: #3a3a3a;
+    --title-aside: #a8a7a7;
+    --background-grey: #F3F3F2;
 }
 
 
@@ -30,6 +32,7 @@ p {
 .container {
     max-width: 1180px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 /**********************
@@ -94,15 +97,15 @@ p {
 .two-columns > * {
     margin-top: 30px;
     margin-bottom: 80px;
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 
 .two-columns > :first-child {
-    width: 75%;
+    width: 65%;
 }
 
 .two-columns aside {
-    width: 25%;
+    width: 35%;
 }
 
 main {
@@ -128,10 +131,71 @@ main .main-content .text > p {
 }
 
 
-
-
-
-
-#section-gray {
-    background-color: gray;
+/* aside */
+main aside h3 {
+    font-size: 1.4em;
+    font-weight: bold;
 }
+
+main aside .posts {
+    margin-top: 40px;
+}
+
+main aside .posts .post {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid gray;
+}
+
+main aside .posts .post:last-child {
+    border: none;
+}
+
+
+
+main aside .post h4 {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: var(--title-aside);
+    font-weight: bold;
+}
+
+main aside .post .post-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+
+main aside .post .post-content img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+main aside .post .post-content p {
+    margin-left: 20px;
+}
+
+
+
+
+/* main section grey */
+#section-gray {
+    background-color: var(--background-grey);
+    padding: 60px 0px;
+}
+
+#section-gray .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#section-gray .card {
+    padding: 0px 25px;
+}
+
+#section-gray .card h3{
+    white-space: nowrap;
+}
+
