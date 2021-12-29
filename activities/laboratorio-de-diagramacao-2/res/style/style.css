@@ -8,6 +8,8 @@
     --background-button: #E95C3C;
     --background-button-hover: #d4563a;
     --background-footer: #1C1C1C;
+    --footer-line: #5a5858;
+    --footer-font: #b8b4b4;
 }
 
 
@@ -23,7 +25,7 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: #000000;
 }
 
@@ -33,7 +35,7 @@ p {
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -84,10 +86,11 @@ p {
 }
 
 #banner nav ul li a{
-    color: #FFFFFF;
     padding: 20px;
+    font-size: 1.1em;
     text-transform: uppercase;
     white-space: nowrap;
+    color: #FFFFFF;
     border: 2px solid rgba(255, 255, 255, 0);
 }
 
@@ -123,6 +126,11 @@ p {
 
 main {
     width: 100%;
+}
+
+main .main-content {
+    display: flex;
+    flex-direction: column;
 }
 
 main .main-content header {
@@ -164,8 +172,6 @@ main aside .posts .post:last-child {
     border: none;
 }
 
-
-
 main aside .post h4 {
     font-size: 0.7em;
     text-transform: uppercase;
@@ -204,6 +210,12 @@ main aside .post .post-content p {
     flex-wrap: wrap;
 }
 
+#section-gray .card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 #section-gray .card h3{
     white-space: nowrap;
     color: var(--color-black);
@@ -233,10 +245,40 @@ main aside .post .post-content p {
 
 footer {
     background-color: var(--background-footer);
-    padding: 50px 0 30px 0;
+    padding: 80px 0 30px 0;
 }
 
 footer .rows {
     display: flex;
     flex-direction: row;
+}
+
+footer .rows .list-posts {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+footer .list-posts h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+footer .list-posts ul{
+    margin-top: 30px;
+}
+
+footer .list-posts ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid var(--footer-line);
+    color: var(--footer-font);
+}
+
+footer .list-posts ul li:last-child{
+    border: none;
+}
+
+footer .list-posts li a {
+    color: var(--footer-font);
 }
