@@ -442,3 +442,151 @@ main article footer ul li > :hover {
     cursor: none;
 }
 
+/* Media screen 960px */
+@media only screen and (max-width: 960px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    /*********************
+    ** sidebar 
+    */
+
+    #sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #sidebar .preface {
+        text-align: center;
+    }
+
+    #sidebar .sidebar-cards {
+        justify-content: center;
+    }
+
+    #sidebar .sidebar-cards > :nth-child(2n+1) {
+        margin-right: 5px;
+    }
+
+    #sidebar footer .contact ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+
+
+/*********************
+****** Media Screen 
+**********************/
+
+/* Media screen 700px */
+@media only screen and (max-width: 700px) {
+
+    .wrapper {
+        padding: 0;
+        margin-top: 110px;
+        margin-bottom: 30px;
+    }
+
+    /*********************
+    ** header 
+    */
+
+    #navigation nav{
+        display: none;
+    }
+
+    /*********************
+    ** sidebar 
+    */
+
+    #sidebar .list-posts, #sidebar .about {
+        padding: 0 20px;
+    }
+
+    #sidebar .about {
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+
+    #sidebar .sidebar-cards > {
+        margin-right: 0;
+    }
+
+    /*********************
+    ** main 
+    */
+
+    main .post {
+        text-align: center;
+    }
+
+    main .post header {
+        flex-direction: column;
+    }
+
+    /* main .post header > div {
+        padding: 0;
+    } */
+
+    main .post .title {
+        padding: 50px 20px 10px 20px;
+        border: none;
+    }
+
+    main .post .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px 30px 20px;
+    }
+
+    main .post .details .author {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main .post .details .author span{
+        margin: 10px 0 0 0;
+    }
+
+    main .post footer {
+        flex-direction: column;
+    }
+
+    main .post footer a{
+        margin: 0 0 5px 0;
+    }
+
+    main .post footer .status li:first-child{
+        margin: 0;
+    }
+
+    #pagination ul {
+        justify-content: center;
+        margin: 0;
+    }
+
+}
+
+/* Media screen 480px */
+@media only screen and (max-width: 480px) {
+
+    /*********************
+    ** main 
+    */
+    #pagination {
+        font-size: 0.8em;
+    }
+
+    #pagination ul li:first-child{
+        margin-right: 55px;
+    }
+}
