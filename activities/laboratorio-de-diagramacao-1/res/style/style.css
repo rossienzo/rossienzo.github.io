@@ -37,6 +37,36 @@ a {
     padding: 110px 20px 100px 20px;
 }
 
+/* menu */
+#menu {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    top: 60px;
+    right: 0;
+    background-color: #FFFFFF;
+    border-left: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+    z-index: 999999;
+}
+
+#menu nav {
+    text-align: right;
+}
+
+#menu nav ul li{
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+#menu nav ul li:first-child{
+    border-top: none;
+}
+
+#menu nav ul li a:hover{
+    color: #000000;
+}
 /*********************
 ** header 
 */
