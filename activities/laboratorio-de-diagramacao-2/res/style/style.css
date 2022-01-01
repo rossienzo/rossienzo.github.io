@@ -46,6 +46,11 @@ p {
 }
 
 /* rows of cards (section gray, footer) */
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .rows > * {
     max-width: 33.333333%;
     padding: 0px 25px;
@@ -69,6 +74,7 @@ p {
 #banner h1 {
     font-size: 4.2em;
     font-weight: bold;
+    white-space: nowrap;
     color: #FFFFFF;
 }
 
@@ -201,7 +207,7 @@ main aside .post .post-content p {
 
 #section-gray {
     background-color: var(--background-gray);
-    padding: 60px 0px;
+    padding: 60px 0px; 
 }
 
 #section-gray .cards {
@@ -209,6 +215,7 @@ main aside .post .post-content p {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 
 #section-gray .card-content {
     display: flex;
@@ -283,3 +290,91 @@ footer .list-posts ul li:last-child{
 footer .list-posts li a {
     color: var(--footer-font);
 }
+
+
+/*********************
+****** Media Screen 
+**********************/
+
+/* Media screen 960px */
+@media only screen and (max-width: 1120px) {
+   
+    #section-gray .rows > * {
+        max-width: 50%;
+    }
+
+    #section-gray .card {
+        margin-top: 60px;
+    }
+}
+
+/* Media screen 960px */
+@media only screen and (max-width: 750px) {
+
+    /* header */
+    #banner h1 {
+        font-size: 3.2em;
+    }
+
+    #banner nav {
+        font-size: 0.75em;
+    }
+
+    /* main */
+    main .two-columns {
+        flex-direction: column;
+    }
+
+    main .two-columns .main-content {
+        width: 100%;
+    }
+
+    main .two-columns aside {
+        width: 100%;
+    }
+
+    /* Section grey */
+    #section-gray .rows > * {
+        max-width: 100%;
+    }
+
+    #section-gray .cards .card a{
+        float: right;
+    }
+}
+
+
+/* Media screen 960px */
+@media only screen and (max-width: 540px) {
+
+    /* header */
+    #banner h1 {
+        font-size: 2.7em;
+    }
+
+    #banner nav{
+        margin: 0;
+    }
+
+    #banner nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #banner nav ul li{
+        margin-top: 50px;
+    }
+
+    /* section gray */
+
+    #section-gray .cards .card h3 {
+        white-space: normal;
+    }
+
+    /* footer */
+    footer .rows > * {
+        max-width: 50%;
+    }
+}
+
+

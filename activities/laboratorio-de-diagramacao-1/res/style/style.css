@@ -472,6 +472,11 @@ main article footer ul li > :hover {
     cursor: none;
 }
 
+
+/*********************
+****** Media Screen 
+**********************/
+
 /* Media screen 960px */
 @media only screen and (max-width: 960px) {
 
@@ -507,13 +512,6 @@ main article footer ul li > :hover {
         justify-content: center;
     }
 }
-
-
-
-
-/*********************
-****** Media Screen 
-**********************/
 
 /* Media screen 700px */
 @media only screen and (max-width: 700px) {
