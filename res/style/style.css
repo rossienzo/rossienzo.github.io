@@ -201,7 +201,7 @@ main {
 }
 
 /* Background of lab activities */
-.content .lab-activities:nth-child(even) {
+.content .lab-activities:nth-child(2n) {
     background-color: whitesmoke;
 }
 
