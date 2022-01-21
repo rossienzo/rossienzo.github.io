@@ -1,0 +1,13 @@
+
+/* Large desktop */
+@media (min-width: 980px) {
+    
+}
+
+/* Tablet, small desktop and phone */
+@media (max-width: 979px) {
+
+    #menu #close {
+        cursor: pointer;
+    }
+}

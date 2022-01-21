@@ -1,0 +1,133 @@
+/* 
+ Main começa aqui
+*/
+
+.news, .staff, .products {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px 50px 100px;
+}
+
+.staff, .products {
+    flex-wrap: wrap;
+}
+
+.news div {
+    padding:0 40px;
+    border-right: 1px solid #ddd;
+}
+
+.news div:last-child{
+    border-right: none;
+}
+
+.news h3 {
+    color: var(--blue);
+    font-weight: lighter;
+    line-height:1.5em;
+    margin-bottom: 30px;
+}
+
+.news p {
+    color: var(--gray);
+    font-size: 0.9em;
+    font-weight: lighter;
+    line-height:1.5em;
+    margin-bottom: 30px;
+}
+
+.news a, .products a {
+    background-color:var(--blue);
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.staff { 
+    justify-content:space-between;
+    background-color:var(--blue);
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+    .staff h2, .staff p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .staff h2 {
+        margin:20px;
+        font-size: 2.6em;
+        font-weight: normal;
+    }
+
+    .staff > p {
+        margin-bottom: 20px;
+    }
+
+    .staff div {
+        padding: 50px 30px;
+        margin: 30px 20px 0 20px;
+        border: 1px solid #aaa;
+    }
+
+    .staff img{
+        border-radius:50%;
+    }
+
+    .staff h3 {
+        text-align: center;
+        font-weight: normal;
+        margin: 30px 0 10px;
+    }
+    .staff p {
+        color:#ddd;
+    }
+
+.products {
+}
+
+.products h2, .products > p {
+    width: 100%;
+    text-align: center;
+}
+
+.products div {
+    width: 450px;
+    margin: 25px;
+}
+
+.products img {
+    width:100%;
+}
+.products h2 {
+    margin:20px;
+    color: var(--blue);
+    font-size: 2.6em;
+    font-weight: normal;
+}
+.products > p {
+    margin-bottom: 80px;
+}
+
+.products h3 {
+    margin:20px 0;
+    color: var(--blue);
+    font-weight: normal;
+}
+
+.products p {
+    color:#aaa;
+    line-height: 1.5em;
+
+}
+
+.products div p {
+    margin-bottom: 30px;
+}

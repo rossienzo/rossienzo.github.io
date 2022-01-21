@@ -1,0 +1,35 @@
+/* Large desktop */
+@media (min-width: 980px) {
+    header ul #bars {
+        display: none;
+    }
+}
+
+/* Tablet, small desktop and phone */
+@media (max-width: 979px) {
+
+    header ul .nav-link{
+        display: none;
+    }
+
+    header ul #bars {
+        display: inline-block;
+    }
+
+    header ul #bars:hover {
+        cursor: pointer;
+    }
+}
+/* tablet and phone landscape */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 3em;
+    }
+}
+
+/* phone */
+@media (max-width: 480px) {
+    header h1 {
+        font-size:2.2em;
+    }
+}

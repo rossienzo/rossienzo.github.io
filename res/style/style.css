@@ -195,6 +195,16 @@ main {
 
  /* web-fundamentals - activities */
 
+.content .lab-activities {
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
+}
+
+/* Background of lab activities */
+.content .lab-activities:nth-child(even) {
+    background-color: whitesmoke;
+}
+
 .content .lab-activities h3 {
     display: inline-block;
     margin: 0px;
@@ -204,10 +214,6 @@ main {
     text-transform: uppercase;
     color: white;
     font-size: 1.1em;
-}
-.content .lab-activities {
-    padding: 10px 15px 10px 15px;
-    margin-top: 10px;
 }
 
 .lab-activities ol li{

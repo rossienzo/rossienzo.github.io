@@ -1,0 +1,7 @@
+/* layout */
+@import './layout/header.css';
+@import './layout/menu.css';
+@import './layout/footer.css';
+
+/* pages */
+@import './pages/index.css';

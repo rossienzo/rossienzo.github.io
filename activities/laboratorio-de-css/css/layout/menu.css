@@ -1,0 +1,35 @@
+/* menu */
+#menu {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    right: 0;
+    background-color: rgba(67, 112, 180,0.9);
+    z-index: 999999;
+}
+
+#menu nav {
+    text-align: right;
+}
+
+#menu nav ul{
+    list-style-type: none;
+}
+
+#menu nav ul li{
+    padding: 20px;
+}
+
+#menu nav ul li:first-child{
+    border-top: none;
+}
+
+#menu nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#menu nav ul li a:hover{
+    color: #ECECEC;
+}
