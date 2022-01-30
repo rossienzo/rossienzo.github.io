@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/script.js"></script>
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h3>
+        5. Faça um programa que implemente a funcionalidade substituir em textos, ou seja, terá um campo
+        "procurar" e um campo "substituir". Ao executar, seu programa deverá procurar as ocorrências no texto
+        do valor digitado em "procurar" e trocar pelo valor digitado em "substituir".
+    </h3>
+
+    <input id="inputText" type="text" placeholder="Digite um texto" 
+        value="Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis Mais vale um bebadis conhecidiss, que um alcoolatra anonimis vidis">
+    
+    <label for="inputTextSearch">Procurar</label>
+    <input id="inputTextSearch" type="text" placeholder="Digite um texto" 
+        value="vidis">
+
+    <label for="inputTextChange">Substituir</label>
+    <input id="inputTextChange" type="text" placeholder="Digite um texto" 
+        value="AQUI">
+        <button id="btn5">Enviar</button>
+    <br>
+    
+    <p id="entry"></p>
+    <p id="result"></p>
+</body>
+</html>
