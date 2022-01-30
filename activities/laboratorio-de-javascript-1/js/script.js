@@ -426,7 +426,7 @@ window.onload = function () {
         else if(text == text.toLowerCase() || text == text.toUpperCase())
             return {msg: "Fraco", color: "red"}
         else 
-            return {msg: "Muito fraco", color : "red"}
+            return {msg: "Fraco", color : "red"}
     }
 
     // verifica se o texto contem numero
