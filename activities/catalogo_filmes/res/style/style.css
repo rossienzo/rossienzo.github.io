@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('./fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('./fonts/OpenSans-Regular.ttf');
+}
+
+:root {
+    --page-background: #f5f5f8;
+    --secondary-text: #7e7e7e;
+    --emphasis-text: #ff4500;
+    --border-base: #d8d8d8;
+    --border-hover: #999999;
+}
+
+* {
+    font-family: 'OpenSans-Regular';
+}
+
+body {
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper {
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: var(--page-background);
+
+    /* Shadow-box */
+    border-left: 1px solid var(--border-base);
+    border-right: 1px solid var(--border-base);
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.37); 
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.20);
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--border-base);
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Articles */
+
+.card {
+    max-width: 350px;
+    margin: 40px 30px 40px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-base);
+
+    /* Shadow box */
+    transition: 0.5s;
+    -webkit-box-shadow: 5px 5px 4px -1px rgba(0,0,0,0.17); 
+    box-shadow: 5px 5px 4px -1px rgba(0,0,0,0.17);
+}
+
+.card:hover {
+    border: 1px solid var(--border-hover);
+    
+    /* Shadow box */
+    transition: 0.35s;
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.37); 
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.37);
+}
+
+/* banner img */
+.card .banner{
+    width: 100%;
+}
+
+.card header, 
+.card section, 
+.card footer {
+    padding: 5px 15px;
+}
+
+/* Articles - Header */
+.card header {
+    display: flex;
+    flex-direction: row;
+}
+
+.card .title-card {
+    width: 70%;
+}
+
+.card .title-card h2 {
+    font-family: 'OpenSans-Bold';
+}
+
+.card .title-card small {
+    font-size: 0.9em;
+    color: var(--secondary-text);
+}
+
+
+.card .title-card .rating{
+    display: flex;
+    align-items: center;
+}
+
+/* note */
+.card .rating .note{
+    margin-left: 5px;   
+}
+
+.card .rating .note .high-number {
+    font-size: 1.5em;
+    font-family: 'OpenSans-Bold';
+    color: var(--emphasis-text);
+}
+
+.card .rating .note small {
+    color: var(--secondary-text);
+}
+
+.card header .age {
+    width: 20%;
+    max-height: 50px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    color: #FFFFFF;
+    border: 1px solid var(--secondary-text);
+}
+
+/* Articles - Section */
+
+.card .summary {
+    margin-top: 10px;
+}
+
+.card .actors{
+    font-size: 0.85em;
+    color: var(--secondary-text);
+}
+
+.card .actors span {
+    font-family: 'OpenSans-Bold';
+    color: #000000;
+}
+
+/* Articles - Footer */
+
+.card footer .like {
+    padding: 20px 0;
+}
+
+.card footer .like a > *{
+    max-width: 48px;
+    height: 48px;
+    margin-right: 7px;
+}
+
+
+/* Classificação Etária */
+.class-18 {
+    background-color: #000000;
+}
+
+.class-16 {
+    background-color: #c52626;
+}
+
+.class-14 {
+    background-color: #dd6e2e;
+}
+
+.class-12 {
+    background-color: #e7e752;
+}
+
+.class-10 {
+    background-color: #145ac2;
+}
+
+.class-0 {
+    background-color: #25c725;
+}
+

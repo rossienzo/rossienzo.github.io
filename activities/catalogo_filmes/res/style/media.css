@@ -1,0 +1,11 @@
+/* Media screen 390px */
+@media only screen and (max-width: 390px) {
+
+    .title {
+        font-size: 1.3em;
+    }
+
+    .card {
+        margin: 15px 10px 15px 10px;
+    }
+}
