@@ -14,6 +14,7 @@
     --emphasis-text: #ff4500;
     --border-base: #d8d8d8;
     --border-hover: #999999;
+    --comment-background: #ebebeb;
 }
 
 * {
@@ -87,7 +88,11 @@ body {
 .card header, 
 .card section, 
 .card footer {
-    padding: 5px 15px;
+    padding: 0px 15px;
+}
+
+.card h3 {
+    margin-top: 15px;
 }
 
 /* Articles - Header */
@@ -158,6 +163,12 @@ body {
     color: #000000;
 }
 
+.card .comments p {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--comment-background);
+}
+
 /* Articles - Footer */
 
 .card footer .like {
@@ -195,4 +206,3 @@ body {
 .class-0 {
     background-color: #25c725;
 }
-

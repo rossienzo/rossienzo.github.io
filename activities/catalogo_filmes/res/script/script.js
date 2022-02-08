@@ -8,7 +8,7 @@ $(() => {
             createCard(data);
             
         },
-        error: () => {
+        error: (err) => {
             $('#catalog').append('<h2>Erro ao carregar dados</h2>');
         }
       });
@@ -64,9 +64,15 @@ function createCard(data)
         summary.classList.add('summary');
     
         let actors = document.createElement('small');
-        actors.classList.add('actors')
+        actors.classList.add('actors');
     
         let actorsBold = document.createElement('span');
+
+        let titleComments = document.createElement('h3');
+
+        let comments = document.createElement('div');
+        comments.classList.add('comments');
+
         /* Element - section End */
     
         /* Element - footer */
@@ -164,8 +170,23 @@ function createCard(data)
         actors.appendChild(actorsBold);
         actors.innerHTML += actorsNames;
     
+
+        // Comentários da página
+      
+        for(let i = 0; i < el.opinioes.length; i++)
+        {
+            let comment = document.createElement('p');
+            comment.innerHTML = `"${el.opinioes[i].descricao}"`;  
+            comments.append(comment);  
+        }
+
+        titleComments.innerHTML = "Comentários";
+        
+
         section.appendChild(summary);
         section.appendChild(actors);
+        section.appendChild(titleComments);
+        section.appendChild(comments);
     
         /* footer card */
         titleFooter.innerHTML = "Títulos Similares";
